@@ -1,6 +1,8 @@
 .acknowledgement{
 
     color: black;
+    text-decoration-style: solid;
+    
     
     
 }
@@ -10,9 +12,18 @@
 }
 body{
 
-  
+    
+    background: #ffffff url("https://images-na.ssl-images-amazon.com/images/I/61ovPXFRATL.jpg") no-repeat right top;   
+  margin-right: 400px;
+
+  margin-left: 20PX;
+ 
+
 }
 h1{
-    color: red;
+    color: skyblue;
     text-align: center
+}
+.marvel{
+ 
 }
