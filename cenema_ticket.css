@@ -7,18 +7,34 @@
     
 }
 .details{
-
+    
     text-align: center;
+}
+.mySlides {display:none;}
+.vital{
+
+    
+     margin-right: 30px;
+    margin-left: 350PX;
+    background-color: white;
+
+}
+.w3-content{
+    
+
+  margin-right: 30px;
+  margin-left: 350PX;
+    
+
 }
 body{
 
     
-    background: #ffffff url("https://images-na.ssl-images-amazon.com/images/I/61ovPXFRATL.jpg") no-repeat right top;   
-  margin-right: 400px;
-
-  margin-left: 20PX;
+ background-image: url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");      
  
-
+  border:2px solid DodgerBlue;
+  border:10px;
+  margin: 0;
 }
 h1{
     color: skyblue;
@@ -27,3 +43,39 @@ h1{
 .marvel{
  
 }
+#tittle{
+
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: rgb(19, 24, 19);
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }

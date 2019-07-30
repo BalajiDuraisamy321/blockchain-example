@@ -6,19 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
     <title>Cinema_ticket</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/getting-started/">
+    <link rel="canonical" href="https://getbootstr  ap.com/docs/3.4/getting-started/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="cenema_ticket.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-  <h1 id="tittle">TICKETS FOR MARVEL MOVIES</h1>
   
+    <h1 id="tittle">TICKETS FOR MARVEL MOVIES</h1>
   
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+
+
   <div class="acknowledgement col-xs-4">
-      <div class="marvel col-xs-1">
-          <p>MARVEL MOVIES
-          </p>
-        </div>
+     
+      
+   <div class="vital">
+      <div class="w3-content w3-display-container">
+
+          <div class="w3-display-container mySlides">
+           <img src="https://wallpaperplay.com/walls/full/3/e/f/137791.jpg" style="width:100%">
+           <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+             AVENGERS
+           </div>
+          </div> 
+         
+          <div class="w3-display-container mySlides">
+           <img src="https://www.avforums.com/image.php?imageparameters=editorial/products/7220b-leader.jpg|909" style="width:100%">
+           <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+             AVENGERS AGE OF ULTRON
+           </div>
+          </div>
+         
+          <div class="w3-display-container mySlides">
+           <img src="http://7wallpapers.net/wp-content/uploads/Avengers-Infinity-War-17-1800x1013.jpg" style="width:100%">
+           <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+             AVENGERS INFINITY WAR
+           </div>
+          </div>
+         
+          <div class="w3-display-container mySlides">
+           <img src="https://cdn1-www.superherohype.com/assets/uploads/2019/04/Screen-Shot-2019-04-16-at-10.52.47-AM.png" style="width:100%">
+           <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+             AVENGERS END GAME
+           </div>
+          </div>
+         
+         
+          <div class="w3-display-container mySlides">
+           <img src="https://specials-images.forbesimg.com/imageserve/5d14be704c687b00085af34e/960x0.jpg?fit=scale" style="width:100%">
+           <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+             SPIDERMAN FAR FROM HOME
+           </div>
+          </div>
+         
+         
+         
+            <button class="w3-button w3-display-left w3- black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            <p>   </p>
+            <p>   </p>
+            <p>   </p>
+            <p>   </p>
+            <p>   </p>
+            <p>   </p>
+      </div>
+    </div>
+    <div class="vital">     
+         <script>
+         var slideIndex = 1;
+         showDivs(slideIndex);
+         
+         function plusDivs(n) {
+           showDivs(slideIndex += n);
+         }
+         
+         function showDivs(n) {
+           var i;   
+           var x = document.getElementsByClassName("mySlides");
+           if (n > x.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = x.length}
+           for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+           }
+           x[slideIndex-1].style.display = "block";  
+         }
+         </script>
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
           <thead>
@@ -63,17 +142,21 @@
               <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 80</td>
             </tr>
           </tbody>
-   </div>
+    
    
         </table>
-        <div class="details">
+    </div>    
+   </div>
+          <div class="details">
             <p id="details">MOVIE_NAME</p>
             <input type="enter movie name here">
             <p>NUMBER_OF_TICKETS</p>
             <input type="number of tickets">
             <p>   </p>
             <button class="info">SUBMIT</button>
+            <p>   </p>
           </div>
+      <div class="vital">
         <div class="table-responsive">
             <table class="table table-bordered table-striped">
               <thead>
@@ -90,7 +173,9 @@
                 
               </tbody>
             </table>
-          </div>
+          
+        </div>
       </div>
+  </div>
 </body>
 </html>
