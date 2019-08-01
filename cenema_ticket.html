@@ -9,14 +9,14 @@
     <link rel="canonical" href="https://getbootstr  ap.com/docs/3.4/getting-started/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="cenema_ticket.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+</head> 
 <body>
   
     <h1 id="tittle">TICKETS FOR MARVEL MOVIES</h1>
   
     <ul>
-      <li><a class="active" href="#home">Home</a></li>
+      <li><a class="active" href="#home">Home</a></li> 
       <li><a href="#news">News</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#about">About</a></li>
@@ -77,27 +77,28 @@
             <p>   </p>
             <p>   </p>
       </div>
+               <script>
+                                  var slideIndex = 1;
+                      showDivs(slideIndex);
+         
+                      function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                      }
+         
+                      function showDivs(n) {
+                        var i;   
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                           x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                      }             
+               </script>
     </div>
     <div class="vital">     
-         <script>
-         var slideIndex = 1;
-         showDivs(slideIndex);
          
-         function plusDivs(n) {
-           showDivs(slideIndex += n);
-         }
-         
-         function showDivs(n) {
-           var i;   
-           var x = document.getElementsByClassName("mySlides");
-           if (n > x.length) {slideIndex = 1}
-           if (n < 1) {slideIndex = x.length}
-           for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-           }
-           x[slideIndex-1].style.display = "block";  
-         }
-         </script>
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
           <thead>
@@ -108,7 +109,7 @@
               <th>NUMBER OF TICKETS AVAILABLE</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="tablebody">
             <tr>
               <th scope="row">1</th>
               <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>THE AVENGERS</td>
@@ -149,13 +150,35 @@
    </div>
           <div class="details">
             <p id="details">MOVIE_NAME</p>
-            <input type="enter movie name here">
+            <input type="text" name="text" class="moviename">
             <p>NUMBER_OF_TICKETS</p>
-            <input type="number of tickets">
+            <input type="text" name="text" class="numberoftickets">
             <p>   </p>
-            <button class="info">SUBMIT</button>
+            <button class="info" onclick="myFunction()">SUBMIT</button>
             <p>   </p>
-          </div>
+            <p id="demo"></p>
+            <p id="dem"></p>
+          </div>   
+                            <script>
+                                      var a=0;
+                                      var b="";
+                                      var c="";
+                                      
+                                      function myFunction(){
+                                        a = document.getElementsByClassName("numberoftickets");
+                                        document.getElementById("dem").innerHTML = a.textContent;
+                                        console.log(a.textContent);
+                                        b = document.getElementsByClassName("moviename");
+                                        document.getElementById("demo").innerHTML = b.textContent;
+                                        console.log(b.textContent);
+                                        c = document.getElementsByClassName("text-success");
+                                        for(var i=0;i<c.length;i+=3)
+                                        console.log(c[i].textContent);
+                                        
+                                      
+                                      }
+                                      
+                            </script>
       <div class="vital">
         <div class="table-responsive">
             <table class="table table-bordered table-striped">
