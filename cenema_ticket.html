@@ -9,22 +9,41 @@
     <link rel="canonical" href="https://getbootstr  ap.com/docs/3.4/getting-started/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="cenema_ticket.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
 </head> 
 <body>
+      <div class="topnav">
+        <a href="#home" class="active">MARVEL</a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+          function myFunc() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+      </script>
+      
+    
   
     <h1 id="tittle">TICKETS FOR MARVEL MOVIES</h1>
-  
-    <ul>
-      <li><a class="active" href="#home">Home</a></li> 
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
+   
 
 
-
-  <div class="acknowledgement col-xs-4">
+  <div class="acknowledgement col-xs-4 col-sm-10 col-md-25 col-lg-50 col-xl-100">
      
       
    <div class="vital">
@@ -96,6 +115,9 @@
                         x[slideIndex-1].style.display = "block";  
                       }             
                </script>
+                            
+
+                          
     </div>
     <div class="vital">     
          
@@ -113,34 +135,34 @@
             <tr>
               <th scope="row">1</th>
               <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>THE AVENGERS</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 150</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 100</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>150</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>100</td>
               
                     
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> AVENGERS AGE OF ULTRON</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 200</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 120</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>AVENGERS AGE OF ULTRON</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>200</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>120</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> AVENGERS INFINITY WAR</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 300</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 60</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>AVENGERS INFINITY WAR</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>300</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>60</td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> AVENGERS END GAME</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 500</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 70</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>AVENGERS END GAME</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>500</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>70</td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> SPIDERMAN FOR FROM HOME</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 600</td>
-              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 80</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>SPIDERMAN FOR FROM HOME</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>600</td>
+              <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>80</td>
             </tr>
           </tbody>
     
@@ -150,9 +172,9 @@
    </div>
           <div class="details">
             <p id="details">MOVIE_NAME</p>
-            <input type="text" name="text" class="moviename">
-            <p>NUMBER_OF_TICKETS</p>
-            <input type="text" name="text" class="numberoftickets">
+            <input type="text" name="text" id="moviename" value="">
+            <p id="details">NUMBER_OF_TICKETS</p>
+            <input type="text" name="text" id="numberoftickets" value="">
             <p>   </p>
             <button class="info" onclick="myFunction()">SUBMIT</button>
             <p>   </p>
@@ -165,15 +187,21 @@
                                       var c="";
                                       
                                       function myFunction(){
-                                        a = document.getElementsByClassName("numberoftickets");
-                                        document.getElementById("dem").innerHTML = a.textContent;
-                                        console.log(a.textContent);
-                                        b = document.getElementsByClassName("moviename");
-                                        document.getElementById("demo").innerHTML = b.textContent;
-                                        console.log(b.textContent);
+                                        a = parseInt(document.getElementById("numberoftickets").value);
+                                        document.getElementById("dem").innerHTML = a;
+                                        console.log(a);
+                                        b = document.getElementById("moviename").value;
+                                        document.getElementById("demo").innerHTML = b;
+                                        console.log(b);
                                         c = document.getElementsByClassName("text-success");
-                                        for(var i=0;i<c.length;i+=3)
-                                        console.log(c[i].textContent);
+                                        for(var i=0;i<c.length;i+=3){
+                                         if(c[i].textContent == b){
+                                           console.log(c[i].textContent);
+                                           console.log(parseInt(c[i+1].textContent))
+                                           console.log(parseInt(c[i+2].textContent))
+                                          }
+                                        }
+                                    
                                         
                                       
                                       }
@@ -200,5 +228,53 @@
         </div>
       </div>
   </div>
+  <div class="des">
+                              
+                               
+
+      <h2 id="head">MOVIE DESCRIPTION</h2>
+
+      <button class="accordion">THE AVENGERS</button>
+      <div class="panel">
+        <p>Marvel's The Avengers[6] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[3][7] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.[N 1] It is the sixth film in the Marvel Cinematic Universe (MCU). The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the titular Avengers team, alongside Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury, director of the spy agency S.H.I.E.L.D., recruits Tony Stark, Steve Rogers, Bruce Banner, and Thor to form a team that must stop Thor's brother Loki from subjugating Earth.</p>
+      </div>
+      
+      <button class="accordion">AVENGERS AGE OF ULTRON</button>
+      <div class="panel">
+        <p>Avengers: Age of Ultron is a 2015 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers and the eleventh film in the Marvel Cinematic Universe (MCU). The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Jeremy Renner, Don Cheadle, Aaron Taylor-Johnson, Elizabeth Olsen, Paul Bettany, Cobie Smulders, Anthony Mackie, Hayley Atwell, Idris Elba, Stellan Skarsgård, James Spader, and Samuel L. Jackson. In the film, the Avengers fight Ultron, an artificial intelligence obsessed with causing human extinction.</p>
+      </div>
+      
+      <button class="accordion">AVENGERS INFINITY WAR</button>
+      <div class="panel">
+        <p>Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers and 2015's Avengers: Age of Ultron, and the nineteenth film in the Marvel Cinematic Universe (MCU). It was directed by Anthony and Joe Russo, written by Christopher Markus and Stephen McFeely, and features an ensemble cast including Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Benedict Cumberbatch, Don Cheadle, Tom Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Dave Bautista, Zoe Saldana, Josh Brolin, and Chris Pratt. In the film, the Avengers and the Guardians of the Galaxy attempt to prevent Thanos from amassing the all-powerful Infinity Stones in a quest to wipe out half of all life in the universe</p>
+      </div>
+
+      <button class="accordion">AVENGERS END GAME</button>
+      <div class="panel">
+        <p>Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers, 2015's Avengers: Age of Ultron, and 2018's Avengers: Infinity War and the twenty-second film in the Marvel Cinematic Universe (MCU). It was directed by Anthony and Joe Russo, written by Christopher Markus and Stephen McFeely, and features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse the damage caused by Thanos in Infinity War.</p>
+      </div>
+
+      <button class="accordion">SPIDER MAN FOR FROM HOME</button>
+      <div class="panel">
+        <p>Spider-Man: Far From Home is a 2019 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios, and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and the twenty-third film in the Marvel Cinematic Universe (MCU). The film is directed by Jon Watts, written by Chris McKenna and Erik Sommers, and stars Tom Holland as Peter Parker / Spider-Man, alongside Samuel L. Jackson, Zendaya, Cobie Smulders, Jon Favreau, J. B. Smoove, Jacob Batalon, Martin Starr, Marisa Tomei, and Jake Gyllenhaal. In Spider-Man: Far From Home, Parker is recruited by Nick Fury and Mysterio to face the Elementals while he is on a school trip to Europe.</p>
+      </div>
+      
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+   </div>
 </body>
 </html>
