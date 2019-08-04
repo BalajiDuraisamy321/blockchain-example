@@ -15,6 +15,7 @@
     
 </head> 
 <body>
+           
       <div class="topnav">
         <a href="#home" class="active">MARVEL</a>
         <div id="myLinks">
@@ -26,16 +27,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      <script>
-          function myFunc() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          }
-      </script>
+      
       
     
   
@@ -96,25 +88,7 @@
             <p>   </p>
             <p>   </p>
       </div>
-               <script>
-                                  var slideIndex = 1;
-                      showDivs(slideIndex);
-         
-                      function plusDivs(n) {
-                        showDivs(slideIndex += n);
-                      }
-         
-                      function showDivs(n) {
-                        var i;   
-                        var x = document.getElementsByClassName("mySlides");
-                        if (n > x.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = x.length}
-                        for (i = 0; i < x.length; i++) {
-                           x[i].style.display = "none";  
-                        }
-                        x[slideIndex-1].style.display = "block";  
-                      }             
-               </script>
+              
                             
 
                           
@@ -178,54 +152,12 @@
             <p>   </p>
             <button class="info" onclick="myFunction()">SUBMIT</button>
             <p>   </p>
-            <p id="demo"></p>
-            <p id="dem"></p>
+            
           </div>   
-                            <script>
-                                      var a=0;
-                                      var b="";
-                                      var c="";
-                                      
-                                      function myFunction(){
-                                        a = parseInt(document.getElementById("numberoftickets").value);
-                                        document.getElementById("dem").innerHTML = a;
-                                        console.log(a);
-                                        b = document.getElementById("moviename").value;
-                                        document.getElementById("demo").innerHTML = b;
-                                        console.log(b);
-                                        c = document.getElementsByClassName("text-success");
-                                        for(var i=0;i<c.length;i+=3){
-                                         if(c[i].textContent == b){
-                                           console.log(c[i].textContent);
-                                           console.log(parseInt(c[i+1].textContent))
-                                           console.log(parseInt(c[i+2].textContent))
-                                          }
-                                        }
-                                    
-                                        
-                                      
-                                      }
-                                      
-                            </script>
-      <div class="vital">
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <td></td>
-                  <th>MOVIE_NAME</th>
-                  <th>NUMBER_OF_TICKETS_BOOKED</th>
-                  <th>PRICE_OF_MOVIE_TICKET</th>
-                  
-                  
-                </tr>
-              </thead>
-              <tbody>
-                
-              </tbody>
-            </table>
-          
-        </div>
+                            
+      <div id="result">
+          <p id="demo"></p>
+            <p id="dem"></p>
       </div>
   </div>
   <div class="des">
@@ -259,22 +191,8 @@
         <p>Spider-Man: Far From Home is a 2019 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios, and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and the twenty-third film in the Marvel Cinematic Universe (MCU). The film is directed by Jon Watts, written by Chris McKenna and Erik Sommers, and stars Tom Holland as Peter Parker / Spider-Man, alongside Samuel L. Jackson, Zendaya, Cobie Smulders, Jon Favreau, J. B. Smoove, Jacob Batalon, Martin Starr, Marisa Tomei, and Jake Gyllenhaal. In Spider-Man: Far From Home, Parker is recruited by Nick Fury and Mysterio to face the Elementals while he is on a school trip to Europe.</p>
       </div>
       
-      <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
       
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      </script>
    </div>
+   <script src="cenema_ticket.js"></script>
 </body>
 </html>

@@ -142,3 +142,7 @@ image{
   text-align: center;
   text-decoration-style: solid;
 }
+#result{
+  background-color: whitesmoke;
+  color: blue;
+}
